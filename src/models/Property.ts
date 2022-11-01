@@ -1,0 +1,33 @@
+import { City } from "./City";
+import { PropertyCategory } from "./PropertyCategory";
+import { PropertyType } from "./PropertyType";
+import { User } from "./User";
+
+export type Property = {
+  id: number;
+  propertyTypeId: number;
+  propertyCategoryId: number;
+  userId: number;
+  cityId: number;
+  featured: boolean;
+  title: string;
+  description: string;
+  imageNames: string;
+  bedRoomCount: number;
+  bathRoomCount: number;
+  kitchenRoomCount: number;
+  parkingCount: number;
+  additionalFeatures: string;
+  price: number;
+  currency: string;
+  address: string;
+  latitude: number;
+  longitude: number;
+  createdDate: Date;
+  city: City;
+  propertyCategory: PropertyCategory;
+  propertyType: PropertyType;
+  user: User;
+  size: number;
+  isLiked: boolean;
+};
